@@ -14,10 +14,10 @@
   </head>
   <body>
     <section class="header">
-       
+
         <nav>
             <a href="index.html"><img src="images/logo_2363866.png"></a>
-            <div class="nav-links" id="navLinks"> 
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -34,32 +34,39 @@
         </nav>
         <div class="form-box">
       <div class="button-box">
-          <div id="btn"></div> 
+          <div id="btn"></div>
           <button type="button" class="toggle-btn" onclick="visitor()">VISITOR</button>
           <button type="button" class="toggle-btn" onclick="admin()">ADMIN</button>
-          
+
           </div>
-            <form id="visitor" class="input-group">
-            <input type="text" class="input-field" placeholder="Visitor Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+
+
+            <form action="login.php" id="visitor" class="input-group" method="post">
+            <input type="text" class="input-field" id="ID" name="ID" placeholder="Visitor Id" required>
+            <input type="password" class="input-field" id="password" name="password" placeholder="Enter Password" required>
+                <input type="checkbox" id="check_box" name=check_box value="YES"  class="checkbox">&ensp;<span>Remember Password</span>
+                <br>
+                <br>
+
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
-            <form id="admin" class="input-group">
-            <input type="text" class="input-field" placeholder="Admin Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+            <form action="login.php" id="admin" class="input-group" method="post">
+            <input type="text" class="input-field" id="ID" name="ID" placeholder="Admin Id" required>
+            <input type="password" class="input-field" id="password" name="password" placeholder="Enter Password" required>
+            <input type="checkbox" id="check_box" name=check_box value="YES" class="checkbox">&ensp;<span>Remember Password</span>
+                <br>
+                <br>
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
-            
+
         </div>
-        
-        
+
+
 <script>
         var x = document.getElementById("visitor");
         var y = document.getElementById("admin");
         var z = document.getElementById("btn");
-            
+
             function admin(){
                 x.style.left = "-400px";
                 y.style.left = "50px";
@@ -73,15 +80,15 @@
         </script>
 
       </section>
-      
-  
-      
-      
+
+
+
+
       <!--------Footer------>
       <section class="footer">
           <h4>Follow Us</h4>
           <p> FOR WILDLIFE ,STUDY OF ANIMALS, PARK ACTIVITIES, AND MORE</p>
-      
+
                <div class="icons">
                    <i class="fa fa-facebook"></i>
                       <i class="fa fa-twitter"></i>
