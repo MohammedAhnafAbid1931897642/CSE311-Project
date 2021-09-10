@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <title>Zoo-Management</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/2177c9e70d.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  </head>
+  <body>
+    <section class="fub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_2363866.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Registration.html">REGISTER</a></li>
+                    <li><a href="log%20in.html">LOGIN</a></li>
+                    <li><a href="Details.html">DETAILS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="AdminPanel.html">ADMIN PANEL</a></li>
+             </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+            <h1> Admin Panel </h1>
+            
+        
+</section>
+      <div class="row">
+              <div class="details-col">
+      <div class="cardBox">
+      <div class="card">
+          <div>
+              <div class="numbers">1,042></div>
+              <div class="cardName">Daily views></div>
+          </div>
+          <div class="iconBox">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+          </div>
+        <div class="card">
+          <div>
+              <div class="numbers">150></div>
+              <div class="cardName">Bought Ticket></div>
+          </div>
+          <div class="iconBox">
+              <i class="fa fa-ticket" aria-hidden="true"></i>
+          </div>
+          </div>
+        <div class="card">
+          <div>
+              <div class="numbers">333></div>
+              <div class="cardName">Comments></div>
+          </div>
+            <div class="iconBox">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+          </div>
+            <div class="card">
+          <div>
+              <div class="numbers">400></div>
+              <div class="cardName">Donated></div>
+          </div>
+          <div class="iconBox">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+          </div>
+          </div>
+          </div>
+          </div>
+      </div>
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Traffic', ''],
+          ['January',  1000, 0],
+          ['February',  1170, 0],
+          ['March',  660, 0]
+          
+          
+        ]);
+
+        var options = {
+          title: 'Visitors Over Time',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+          
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Children',    7],
+          ['Adults',      5],
+          ['Membership',  3],
+          ['Donation',    3],
+          
+        ]);
+
+        var options = {
+          title: 'Proportion of Purchase Type'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+        
+    </script>
+      <div id="piechart" class="chart"></div>
+          <section>
+           <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["Children's Ticket", 350000, "#b87333"],
+        ["Adult Ticket", 1500000, "silver"],
+        ["Membership", 2500000, "gold"],
+        ["Donations", 3000000, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Total Revenue Per Month",
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+          <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+</section>
+      </div>
+
+      <!--------Footer------>
+          
+      <section class="footer">
+          <h4>Follow Us</h4>
+          <p> FOR WILDLIFE ,STUDY OF ANIMALS, PARK ACTIVITIES, AND MORE</p>
+      
+               <div class="icons">
+                   <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-instagram"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+      </div>
+          <p>Made with <i class="fa fa-heart-o"></i> by Group 8 </p>
+      </section>
+          
+      <!--------JavaScript for Toggle Menu-------->
+      <script>
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+              navLinks.style.right = "0";
+          }
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+          }
+      </script>
+
+  </body>
+</html>

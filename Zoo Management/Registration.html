@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <title>Zoo-Management</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/2177c9e70d.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  </head>
+  <body>
+    <section class="header">
+       
+        <nav>
+            <a href="index.html"><img src="images/logo_2363866.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Registration.html">REGISTER</a></li>
+                    <li><a href="log%20in.html">LOGIN</a></li>
+                    <li><a href="Details.html">DETAILS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                    <li><a href="AdminPanel.html">ADMIN PANEL</a></li>
+             </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="main">
+      <div class="register">
+  <h2>REGISTER HERE</h2>
+      <form id="register" method="post">
+      <label>First Name : </label>
+          <br>
+          <input type="text" name="fname"
+                 id="name" placeholder="Enter your First Name">
+          <br><br>
+          <label>Last Name</label>
+          <br>
+          <input type="text" name="lname"
+                 id="name" placeholder="Enter your Last Name">
+          <br><br>
+          <label>Your Age :</label>
+          <br>
+          <input type="number" name="age"
+                 id="name" placeholder="Enter your age">
+          <br><br>
+          <label>Email :</label>
+          <br>
+          <input type="number" name="age"
+                 id="name" placeholder="Enter your Email ID">
+          <br><br>
+          <label>Enter Password : </label>
+          <br>
+          <input type="text" name="epass"
+                 id="name" placeholder="Enter your Password">
+          <br><br>
+          <label>Re-Enter Your Password : </label>
+          <br>
+          <input type="text" name="repass"
+                 id="name" placeholder="Re-Enter your Password">
+          <br><br>
+          <label>Gender :</label>
+          <br>
+          
+          &nbsp;
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+          <br><br>
+          
+          <input type="submit" value="Submit" name="submit" id="submit">
+      </form>
+      </div>
+          </div>
+      </section>
+ 
+          
+      
+      <!--------Footer------>
+      <section class="footer">
+          <h4>Follow Us</h4>
+          <p> FOR WILDLIFE ,STUDY OF ANIMALS, PARK ACTIVITIES, AND MORE</p>
+      
+               <div class="icons">
+                   <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-instagram"></i>
+                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-youtube"></i>
+      </div>
+          <p>Made with <i class="fa fa-heart-o"></i> by Group 8 </p>
+      </section>
+      <!--------JavaScript for Toggle Menu-------->
+      <script>
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+              navLinks.style.right = "0";
+          }
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+          }
+      </script>
+
+  </body>
+</html>
