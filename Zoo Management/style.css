@@ -464,8 +464,7 @@ lebel,span,h2{
     position: relative;
     margin: 6% auto;
     
-    background-color: rgba(0,0,0,0.7);
-    padding: 5px;
+    background-color: rgba(0,0,0,0.5);
     overflow: hidden;
     
 }
@@ -510,6 +509,7 @@ lebel,span,h2{
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
+    
 }
 .submit-btn{
     width: 85%;
@@ -624,13 +624,16 @@ position: relative;
 }
 
 .button{
-    border-color: #63E8C5;
+    border-color: #0EBE49;
     position: relative;
-    color: #63E8C5;
+    color: #0EBE49;
     padding: 20px;
     display: grid;
     
     grid-gap: 20px;
+}
+input{
+     color: green;
 }
 .container{
     position: relative;
@@ -638,69 +641,7 @@ position: relative;
     padding: 40px;
     background: #FCFCFC;
 }
-.input-field{
-    position: relative;
-    height: 40px;
-    width: 100%;
-}
-.input-field input[type="text"]
-{
-    position: absolute;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    font-size: 16px;
-    color: #fff;
-    width: 100%;
-}
-.input-field label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #63E8C5;
-    pointer-events: none;
-    display: block;
-    transition: 0.5s;
-}
-.input-field input[type="text"]:focus + label,
-.input-field input[type="text"]:valid + label
-{
-    transform: translateY(-35px);
-    font-size: 14px;
-    color: #fff;
-    background: linear-gradient(to right, #D67460,#8E210B);
-    padding: 2px 6px;
-    
-}
-.input-field span{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    background: #555;
-    width: 100%;
-    height: 2px;
-}
-.input-field span:before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #EF0C0C;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-}
-.input-field input[type="text"]:focus ~ span:before,
-.input-field input[type="text"]:valid ~ span:before
-{
-    transform: scaleX(1);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
-}
+
 
 /*--------admin panel------*/
 .fub-header{
