@@ -35,48 +35,97 @@
         <div class="main">
       <div class="register">
   <h2>REGISTER HERE</h2>
-      <form action="connect.php" id="register" method="post">
-      <label>First Name : </label>
+      <form action="register.php" id="register" method="post">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
           <br>
-          <input type="text" class="form-control" id="firstName" name="fname" />
-                 id="name" placeholder="Enter your First Name">
-          <br><br>
-          <label>Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            name="firstName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
           <br>
-          <input type="text" class="form-control" id="lastName" name="lname" />
-                 id="name" placeholder="Enter your Last Name">
-          <br><br>
-          <label>Your Age :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="lastName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
           <br>
-          <input type="number" name="age"
-                 id="name" placeholder="Enter your age">
-          <br><br>
-          <label>Email :</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            name="age"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
           <br>
-          <input type="number" name="age"
-                 id="name" placeholder="Enter your Email ID">
-          <br><br>
-          <label>Enter Password : </label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="epass">Enter password:</label>
           <br>
-          <input type="text" name="epass"
-                 id="name" placeholder="Enter your Password">
-          <br><br>
-          <label>Re-Enter Your Password : </label>
-          <br>
-          <input type="text" name="repass"
-                 id="name" placeholder="Re-Enter your Password">
-          <br><br>
-          <label>Gender :</label>
-          <br>
-
-          &nbsp;
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" value="male" checked>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-          <br><br>
-
-          <input type="submit" value="Submit" name="submit" id="submit">
+          <input
+            type="password"
+            class="form-control"
+            id="epass"
+            name="epass"
+          />
+          </div>
+          <div class="form-group">
+            <label for="repass">Re-enter password:</label>
+            <br>
+            <input
+              type="password"
+              class="form-control"
+              id="repass"
+              name="repass"
+            />
+            </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+          <input type="submit" class="btn btn-primary" />
       </form>
       </div>
           </div>
