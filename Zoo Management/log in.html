@@ -44,7 +44,8 @@
             <form action="login.php" id="visitor" class="input-group" method="post">
             <input type="text" class="input-field" id="ID" name="ID" placeholder="Visitor Id" required>
             <input type="password" class="input-field" id="password" name="password" placeholder="Enter Password" required>
-                <input type="checkbox" id="check_box" name=check_box value="YES"  class="checkbox">&ensp;<span>Remember Password</span>
+            <input type="hidden" value="NO" id="check_box" name="check_box">
+            <input type="checkbox" id="check_box" name="check_box" value="YES"  class="checkbox">&ensp;<span>Remember Password</span>
                 <br>
                 <br>
 
@@ -53,7 +54,9 @@
             <form action="login.php" id="admin" class="input-group" method="post">
             <input type="text" class="input-field" id="ID" name="ID" placeholder="Admin Id" required>
             <input type="password" class="input-field" id="password" name="password" placeholder="Enter Password" required>
-            <input type="checkbox" id="check_box" name=check_box value="YES" class="checkbox">&ensp;<span>Remember Password</span>
+            <input type="hidden" value="NO" id="check_box" name="check_box">
+            <input type="checkbox" id="check_box" name="check_box" value="YES" class="checkbox">&ensp;<span>Remember Password</span>
+
                 <br>
                 <br>
                 <button type="submit" class="submit-btn">Log in</button>

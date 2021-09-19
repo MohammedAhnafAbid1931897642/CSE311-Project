@@ -5,7 +5,7 @@
   $message= $_POST['message'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','zoo');
+	$conn = new mysqli('localhost','root','','zoo2');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
