@@ -9,11 +9,24 @@
 
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','zoo');
+	$conn = new mysqli('localhost','root','','zoo2');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
-	} else {
+	}
+
+	else if($epass!=$repass){
+		echo "ERROR! Entered password and re-entered password must be the same.";
+		echo "\nRedirecting in 5 seconds...";
+		echo '<html>
+		<head>
+				<meta http-equiv="refresh" content="5;url=Registration.html" />
+		</head>
+		<body>';
+
+	}
+
+	else {
 		$stmt = $conn->prepare("insert into registration(firstName, lastName, age, email, epass, repass, gender) values(?, ?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("ssissss", $firstName, $lastName, $age, $email, $epass, $repass, $gender);
 		$execval = $stmt->execute();
