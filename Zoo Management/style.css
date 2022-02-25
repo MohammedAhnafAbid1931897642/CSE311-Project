@@ -15,11 +15,16 @@ html,body{
 .header {
 min-height: 100vh;
 width: 100%;
-background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/lion-3372720_1920.jpg);
+background-image: linear-gradient(rgba(101, 102, 105, 0.7),rgba(4,9,30,0.7)),url(images/vid-1.gif);
 background-position: center;
 background-size: cover;
 position: relative;
 }
+
+
+
+
+
 nav{
     
     display: flex;
@@ -75,7 +80,7 @@ nav img{
     text-align: left;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 42px;
     
 }
 .text-box p{
@@ -562,7 +567,7 @@ span{
 .tub-header {
 min-height: 100vh;
 width: 100%;
-background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/photo-1538099130811-745e64318258.jfif);
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/c1.jpg);
 background-position: center;
 background-size: cover;
 position: relative;
